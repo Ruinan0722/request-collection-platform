@@ -1,0 +1,107 @@
+# —— Dependencies ——
+node_modules/
+**/node_modules/
+backend/.venv/
+.venv/
+venv/
+**/__pycache__/
+**/*.py[cod]
+**/.pytest_cache/
+**/.mypy_cache/
+**/.ruff_cache/
+*.egg-info/
+backend/*.egg-info/
+
+# —— Build ——
+dist/
+**/dist/
+build/
+**/build/
+*.tsbuildinfo
+
+# —— Environment / secrets（示例文件保留）——
+.env
+.env.*
+!.env.example
+!**/.env.example
+!.env.docker.example
+!**/.env.docker.example
+.env.docker
+.env.production
+.env.local
+.env.*.local
+
+# —— Logs ——
+logs/
+**/logs/
+*.log
+npm-debug.log*
+yarn-error.log*
+
+# —— IDE / OS ——
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Cursor 本地缓存（保留项目 skills/rules）
+.cursor/*
+!.cursor/skills/
+!.cursor/skills/**
+!.cursor/rules/
+!.cursor/rules/**
+
+# —— Coverage / test ——
+coverage/
+**/coverage/
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# —— Temp / dumps（与平台无关的导出、临时数据）——
+tmp/
+temp/
+**/tmp/
+**/temp/
+*.tmp
+*.bak
+tmp_*
+**/tmp_*
+tmp_*/
+**/tmp_*/
+backend/tmp_*
+**/tmp_feishu_bitable_dump.json
+**/*_dump.json
+**/*_export/
+
+# —— Uploads（运行时用户上传）——
+backend/uploads/
+uploads/
+!backend/uploads/.gitkeep
+
+# —— Docker / local volumes ——
+*.pid
+docker-data/
+.data/
+
+# —— Release runtime state ——
+var/releases/
+var/backups/
+!var/.gitignore
+
+# —— Misc ——
+*.pem
+*.key
+!.ssh/*.example
+.python-version
+
+backend/data/
+*.sqlite*
+*.db
+.cache/
+.logs/
+.tmp/
